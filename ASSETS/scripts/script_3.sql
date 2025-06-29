@@ -1,17 +1,4 @@
-SELECT 
-    customers.name AS customer_name,
-    customers.country AS customer_country,
-    categories.name AS category,
-    categories.description AS description,
-    products.name AS product,
-    products.unit,
-    products.price,
-    order_details.quantity,
-    orders.date AS order_date,
-    employees.last_name AS order_employee_name,
-    suppliers.contact AS supplier_contact,
-    suppliers.city AS supplier_city,
-    shippers.name AS shipper_name
+SELECT *
 FROM
     orders
         INNER JOIN
